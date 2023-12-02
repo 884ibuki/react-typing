@@ -1,0 +1,72 @@
+/* App.css */
+
+@keyframes neonEffect {
+  0% {
+    text-shadow: 0 0 5px #eed5e2, 0 0 10px #edbad2, 0 0 15px #e3a7c5;
+  }
+  50% {
+    text-shadow: 0 0 10px #f0bed9, 0 0 15px #e5b8cf, 0 0 20px #e8b3d0;
+  }
+  100% {
+    text-shadow: 0 0 5px #ebdde4, 0 0 10px #e48fb8, 0 0 15px #ef71b2;
+  }
+}
+
+.typing-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 2em;
+  background-color: #fde4e4; /* 豺｡縺�ヴ繝ｳ繧ｯ縺ｮ閭梧勹 */
+}
+
+.question-container {
+  text-align: center;
+}
+
+.kanji,
+.romaji {
+  margin: 0;
+  color: #333; /* 繧医ｊ謚代∴縺滄ｻ偵↓螟画峩 */
+}
+
+.neon {
+  animation: neonEffect 1s infinite;
+}
+
+.input-field {
+  font-size: 0.6em;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.time-left,
+.game-over-message,
+.result-message,
+.rankings {
+  font-size: 0.8em;
+  margin-top: 10px;
+  color: #ff69b4;
+}
+
+.restart-button {
+  background-color: #fff;
+  color: #ff69b4;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.restart-button:hover {
+  background-color: #ff1493;
+}
+
+.game-over-container {
+  text-align: center;
+}
